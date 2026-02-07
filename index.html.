@@ -1,1 +1,124 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adega Amigos da Vila - Cardápio Oficial</title>
+    <style>
+        :root { --gold: #f1c40f; --dark: #0d0d0d; --card: #1a1a1a; --blue: #2980b9; --green: #27ae60; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background-color: var(--dark); color: #fff; margin: 0; padding: 0; }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        
+        header { text-align: center; padding: 40px 0; border-bottom: 2px solid var(--gold); background: linear-gradient(to bottom, #1a1a1a, #0d0d0d); }
+        h1 { color: var(--gold); margin: 0; font-size: 32px; text-transform: uppercase; letter-spacing: 2px; }
+        .promo-braba { color: #888; font-style: italic; margin-top: 5px; }
+
+        .categoria-wrap { margin-top: 40px; }
+        h2 { font-size: 20px; color: var(--gold); border-left: 5px solid var(--gold); padding-left: 15px; text-transform: uppercase; margin-bottom: 20px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { background: var(--card); border-radius: 12px; border: 1px solid #333; overflow: hidden; position: relative; transition: 0.3s; }
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        
+        .img-container { position: relative; height: 180px; }
+        .card img { width: 100%; height: 100%; object-fit: cover; }
+        .badge { position: absolute; top: 10px; right: 10px; background: var(--blue); padding: 5px 10px; border-radius: 5px; font-size: 11px; font-weight: bold; }
+
+        .info { padding: 15px; }
+        .nome { font-size: 16px; font-weight: bold; color: #fff; display: block; }
+        .desc { font-size: 12px; color: #aaa; margin: 8px 0; line-height: 1.4; display: block; }
+        .preco { font-size: 20px; color: var(--green); font-weight: bold; display: block; margin-top: 10px; }
+
+        footer { text-align: center; padding: 50px 20px; border-top: 1px solid #333; margin-top: 50px; color: #555; font-size: 13px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Adega Amigos da Vila</h1>
+    <p class="promo-braba">Bebidas trincando e os melhores combos da vila!</p>
+</header>
+
+<div class="container">
+
+    <section class="categoria-wrap">
+        <h2>🔥 Combos de Sucesso</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="badge" style="background: #c0392b;">O MAIS PEDIDO</div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1527281473222-793895bf44f9?auto=format&fit=crop&w=500&q=80">
+                </div>
+                <div class="info">
+                    <span class="nome">Combo Red Label (700ml)</span>
+                    <span class="desc">Acompanha 4 Energéticos Red Bull + Gelo de Coco. Destilados padronizados em 700ml.</span>
+                    <span class="preco">R$ 144,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categoria-wrap">
+        <h2>🍺 Cervejas e Águas (Sempre Geladas)</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="badge">TRINCANDO</div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1618885472118-20c2423aa4f4?auto=format&fit=crop&w=500&q=80">
+                </div>
+                <div class="info">
+                    <span class="nome">Cervejas Variadas</span>
+                    <span class="desc">Latas 269ml, 350ml e Long Necks 330ml. Diversas proporções para sua sede.</span>
+                    <span class="preco">A partir de R$ 3,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1548964856-ac5269279ba9?auto=format&fit=crop&w=500&q=80">
+                </div>
+                <div class="info">
+                    <span class="nome">Águas (Copos e Garrafas)</span>
+                    <span class="desc">Opções de 200ml, 500ml e 1.5L. Natural ou com Gás.</span>
+                    <span class="preco">A partir de R$ 2,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categoria-wrap">
+        <h2>🥤 Refrigerantes (Lata e PET)</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="badge">GELADO</div>
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1622708782413-d19550c92a26?auto=format&fit=crop&w=500&q=80">
+                </div>
+                <div class="info">
+                    <span class="nome">Linha PET (600ml e 2L)</span>
+                    <span class="desc">Refrigerantes em embalagem família ou individual. Sempre gelados.</span>
+                    <span class="preco">R$ 12,00</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://images.unsplash.com/photo-1543258103-a62bdc069871?auto=format&fit=crop&w=500&q=80">
+                </div>
+                <div class="info">
+                    <span class="nome">Linha Lata (310ml e 350ml)</span>
+                    <span class="desc">Praticidade em latas trincando. Coca-Cola, Guaraná e mais.</span>
+                    <span class="preco">R$ 5,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>ADEGA AMIGOS DA VILA</strong><br>
+        Beba com moderação. Venda proibida para menores de 18 anos.</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
